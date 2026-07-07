@@ -4,8 +4,9 @@
 <div id="root_swagger_viewer"></div>
 
 <script>
+    const GH_PAGES_PREFIX = location.host.endsWith('.github.io') ? '/swagger-ui-simple-example' : '';
     window.ui = SwaggerUIBundle({
-        url: '/swagger_api.nbrb.by_config.json',
+        url: `${GH_PAGES_PREFIX}/swagger_api.nbrb.by_config.json`,
         dom_id: "#root_swagger_viewer",
     });
 </script>
