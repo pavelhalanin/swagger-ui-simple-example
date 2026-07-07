@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="./swagger-ui/node_modules/swagger-ui/dist/swagger-ui.css" />
+<script src="./swagger-ui/node_modules/swagger-ui/dist/swagger-ui-bundle.js"></script>
+
+<div id="root_swagger_viewer"></div>
+
+<script>
+    window.ui = SwaggerUIBundle({
+        url: '/swagger_api.nbrb.by_config.json',
+        dom_id: "#root_swagger_viewer",
+    });
+</script>
